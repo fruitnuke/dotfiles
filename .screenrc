@@ -2,5 +2,9 @@ escape ^\\
 
 startup_message off
 
+term screen-256color
+
 hardstatus alwayslastline
 hardstatus string '%{= kG}[%{G}%H%{g}][ %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %{g}][%{B}%Y-%m-%d %{W}@ %0c%{g}][%=%{B} %1` %{g}%=]'
+
+altscreen on
