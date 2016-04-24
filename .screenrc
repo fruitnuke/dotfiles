@@ -1,10 +1,17 @@
+# Use Ctrl-\ as the screen hotkey, rather than Ctrl-A which conflicts with emacs bindings.
+#
 escape ^\\
 
+# Startup options
+#
 startup_message off
 
+# Terminal configuration
+#
 term screen-256color
-
-hardstatus alwayslastline
-hardstatus string '%{= kG}[%{G}%H%{g}][ %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %{g}][%{B}%Y-%m-%d %{W}@ %0c%{g}][%=%{B} %1` %{g}%=]'
-
 altscreen on
+
+# Status line
+#
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%{G}%H%{g}][ %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %{g}][%{W}%Y-%m-%d %0c%{g}][%=%{B} %1` %{g}%=]'
