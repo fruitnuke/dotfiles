@@ -13,5 +13,6 @@ altscreen on
 
 # Status line
 #
+hardstatus on
 hardstatus alwayslastline
 hardstatus string '%{= kG}[%{G}%H%{g}][ %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %{g}][%{W}%Y-%m-%d %0c%{g}][%=%{B} %1` %{g}%=]'

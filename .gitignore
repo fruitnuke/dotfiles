@@ -1,0 +1,6 @@
+# Ignore everything
+*
+# Then whitelist specific config files
+!*.screenrc
+!*.gitignore
+!.emacs.d/
