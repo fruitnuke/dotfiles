@@ -4,3 +4,4 @@
 !*.screenrc
 !*.gitignore
 !.emacs.d/
+!*.gdbinit

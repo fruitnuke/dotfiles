@@ -6,13 +6,18 @@ escape ^\\
 #
 startup_message off
 
+# Ensure we always detach on disconnect
+autodetach on
+
 # Terminal configuration
 #
 term screen-256color
 altscreen on
+defscrollback 9999
 
 # Status line
 #
 hardstatus on
 hardstatus alwayslastline
 hardstatus string '%{= kG}[%{G}%H%{g}][ %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %{g}][%{W}%Y-%m-%d %0c%{g}][%=%{B} %1` %{g}%=]'
+
