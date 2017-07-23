@@ -117,3 +117,11 @@
 ;; Configuration for assembler coding
 
 (add-hook 'asm-mode-hook 'dbo-common-prog-hook)
+
+;; Autoload Ledger mode for Ledger files
+;;
+;; Assumes the `ledger-mode` package is on the load-path, and that the `ledger`
+;; binary is on $PATH.
+
+(autoload 'ledger-mode "ledger-mode" "Major mode for Ledger" t)
+(add-to-list 'auto-mode-alist '("\\.ledger$" . ledger-mode))
