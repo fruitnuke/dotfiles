@@ -1,13 +1,24 @@
+# 256 color support?
+#
+case $TERM in
+    *-256color) color=yes;;
+esac
+
 # Set the prompt.
 #
-PS1='$ '
-PS2='> '
+if [ $color = yes ]; then
+    PS1='\[\033[38;5;208m\]\$ \[\033[00m\]'
+    PS2='\[\033[38;5;208m\]\> \[\033[00m\]'
+else
+    PS1='$ '
+    PS2='> '
+fi
 
 # Emacs.
 #
 if [[ -n `which emacs` ]]; then
     alias emacs='emacs -nw'
-    export EDITOR=emacs
+    export EDITOR='emacs -nw'
 fi
 
 # Aliases

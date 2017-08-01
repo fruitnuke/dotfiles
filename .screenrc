@@ -21,4 +21,5 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string '%{= kW}%-w%{+r} %n*%t%?(%u)%? %{-}%+w %=%Y-%m-%d %0c'
 
-
+# Track mouse clicks to select window.
+mousetrack on
