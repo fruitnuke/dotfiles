@@ -1,6 +1,7 @@
 ;; Startup options
 
 (setq inhibit-startup-message t)
+(setq ring-bell-function 'ignore)
 
 ;; Add user-local site-lisp from homedir (recursively).
 
@@ -109,6 +110,13 @@
 
 (add-hook 'c-mode-hook 'dbo-common-prog-hook)
 (add-hook 'c-mode-hook 'dbo-c-mode-hook)
+
+;; Configuration for Python coding
+
+(defun dbo-py-mode-hook ()
+  (linum-mode t))
+
+(add-hook 'python-mode-hook 'dbo-py-mode-hook)
 
 ;; Configuration for e-lisp coding
 
