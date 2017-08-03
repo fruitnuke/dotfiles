@@ -1,14 +1,12 @@
 # 256 color support?
 #
-case $TERM in
-    *-256color) color=yes;;
-esac
+colors=`tput colors`
 
 # Set the prompt.
 #
-if [ $color = yes ]; then
-    PS1='\[\033[38;5;208m\]\$ \[\033[00m\]'
-    PS2='\[\033[38;5;208m\]> \[\033[00m\]'
+if [ $colors -ge 256 ]; then
+    PS1="$(tput setaf 208)$ $(tput sgr0)"
+    PS2="$(tput setaf 208)> $(tput sgr0)"
 else
     PS1='$ '
     PS2='> '
