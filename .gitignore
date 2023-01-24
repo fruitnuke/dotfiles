@@ -7,3 +7,5 @@
 !*.gdbinit
 !*.bash_profile
 !*.bashrc
+!*.zprofile
+!*.zshrc
